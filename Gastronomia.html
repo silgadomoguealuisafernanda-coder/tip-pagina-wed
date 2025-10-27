@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastronomía de Itagüí</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+   
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf2;
+      color: #374b31;
+    }
+
+    h2 {
+      color: #374b31;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+   
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #E3B847;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 15px;
+    }
+
+   
+    .platos {
+      padding: 80px 0;
+    }
+
+    .plato img {
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+       height: 200px; 
+      object-fit: cover; 
+    }
+
+    .plato img:hover {
+      transform: scale(1.05);
+    }
+
+    .plato h5 {
+      margin-top: 15px;
+      color: #E3B847;
+    }
+
+   
+    .lugares {
+      background-color: #f5eedc;
+      padding: 80px 0;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .btn-mas {
+      background-color: #E3B847;
+      color: #374b31;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn-mas:hover {
+      background-color: #d6a633;
+      color: white;
+    }
+
+
+    .experiencias {
+      padding: 80px 0;
+      background-image: linear-gradient(to right, #fffaf2, #f5eedc);
+    }
+
+    .experiencias p {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <section class="hero">
+    <h1>SABORES DE ITAGÜÍ</h1>
+  </section>
+
+ 
+  <section class="platos container text-center">
+    <h2>Comida Típica</h2>
+    <p>Descubre los platos tradicionales que reflejan la esencia paisa y la calidez de nuestra gente.</p>
+    <div class="row mt-5">
+      <div class="col-md-3 plato">
+        <img src="bandeja-paisa .jpg"img-fluid" alt="Bandeja paisa">
+        <h5>Bandeja Paisa</h5>
+        <p>El clásico plato antioqueño lleno de sabor y tradición.</p>
+      </div>
+      <div class="col-md-3 plato">
+        <img src="arepa paisa.jpg"img-fluid" alt="Arepa">
+        <h5>Arepa de Maíz</h5>
+        <p>Perfecta para acompañar cualquier comida del día.</p>
+      </div>
+      <div class="col-md-3 plato">
+        <img src="sancocho.jpeg"img-fluid" alt="Sancocho">
+        <h5>Sancocho</h5>
+        <p>Un caldo típico ideal para compartir en familia.</p>
+      </div>
+      <div class="col-md-3 plato">
+        <img src="empanadas.jpg"img-fluid" alt="Empanadas">
+        <h5>Empanadas Paisas</h5>
+        <p>Crujientes por fuera y llenas de sabor por dentro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lugares text-center">
+    <div class="container">
+      <h2>Lugares Recomendados</h2>
+      <p>Visita los rincones gastronómicos más destacados de Itagüí.</p>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" class="card-img-top" alt="Restaurante 1">
+            <div class="card-body">
+              <h5 class="card-title">SABOR Y HUMO</h5>
+              <p class="card-text">Comida al barril típica antioqueña y ambiente familiar.</p>
+              <a href="#" class="btn btn-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1600891963939-cf9c9770d69b" class="card-img-top" alt="Restaurante 2">
+            <div class="card-body">
+              <h5 class="card-title"> LA BURGESERIA GOURMET</h5>
+              <p class="card-text">Hamburgesas artesanales Itagüí.</p>
+              <a href="#" class="btn btn-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" class="card-img-top" alt="Restaurante 3">
+            <div class="card-body">
+              <h5 class="card-title">MIS ALITAS</h5>
+              <p class="card-text">El mejor ambiente nocturno con variedad de sabores.</p>
+              <a href="#" class="btn btn-mas">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experiencias">
+    <div class="container text-center">
+      <h2>Una experiencia para todos los sentidos</h2>
+      <p>En Itagüí, la gastronomía es mucho más que sabor: es tradición, encuentro y alegría.  
+      Te invitamos a recorrer nuestros mercados, fondas y cafés, donde cada plato cuenta una historia y cada sabor te hace sentir en casa.</p>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2025 TIP | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
+

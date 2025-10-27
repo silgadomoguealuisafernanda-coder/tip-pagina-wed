@@ -5,30 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Inicio de sesión - Itagüí</title>
 
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
-      background-color: #fdfcee;
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  background-color: #fdfcee;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
 
-    .top-image {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
+    .contenido-principal {
+      min-height: 80vh; 
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column;
+      text-align: center;
+      padding-top: 50px; 
+      padding-bottom: 50px; 
     }
 
     .login-container {
       max-width: 400px;
-      margin-top: 200px;
       background-color: #fdfcee;
-      text-align: center;
-      padding: 30px 20px;
     }
 
     h2 {
@@ -108,9 +111,8 @@
     .iconos-redes {
       display: flex;
       justify-content: center;
-      align-items: center;
       gap: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .iconos-redes a {
@@ -127,21 +129,29 @@
     .iconos-redes a:hover {
       background-color: #f1f1f1;
     }
+.imagen-inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+    
   </style>
 </head>
 
 <body>
 
- 
-  <img src="itagui.png" alt="Itagüí" class="top-image">
-
-
-  <div class="container d-flex justify-content-center align-items-center flex-column">
+  <div class="contenido-principal container d-flex justify-content-center align-items-center flex-column">
     <div class="login-container">
       <h2>Inicio de sesión</h2>
       <p>Accede a tu cuenta y descubre todo lo que Itagüí tiene para ti.</p>
 
-      <form class="d-flex flex-column align-items-center justify-content-center">
+      <form>
         <input type="email" class="form-control" placeholder="Correo electrónico" required>
         <input type="password" class="form-control" placeholder="Contraseña" required>
         <button type="submit" class="btn-login">Iniciar sesión</button>
@@ -158,6 +168,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <img src="itagui 2.png"imagen-inferior" alt="Itagüí">
+
 </body>
 </html>
